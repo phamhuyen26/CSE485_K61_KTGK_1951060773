@@ -63,7 +63,7 @@
                     else {
                         $erro = "Sửa thất bại";
                     }
-                    header("Location: index.php?controller=reader&action=admin&error=erro");
+                    header("Location: index.php?controller=reader&action=chitiet&error=erro");
                     exit();
                 }
             }
@@ -115,7 +115,7 @@
                     else {
                         $erro = "Sửa thất bại";
                     }
-                    header("Location: index.php?controller=reader&action=admin&error=erro");
+                    header("Location: index.php?controller=reader&action=chitiet&error=erro");
                     exit();
                 }
             }

@@ -34,7 +34,7 @@
         <?php
            foreach($reader_arr as $reader){
             $Edit = "//localhost/BKTGK_1951060773/index.php/?controller=reader&action=edit&iddg=" . $reader['madg'];
-            $Delete ="//localhost/BKTGK_1951060773/index.php/?controller=reader&action=delete&iddg=" . $reader['madg'];
+            $Delete ="index.php/?controller=reader&action=delete&iddg=" . $reader['madg'];
         ?>
         <tr>
           <td scope="row"><?php echo $reader['madg'] ?></td>

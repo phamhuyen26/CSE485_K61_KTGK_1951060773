@@ -10,13 +10,13 @@
         <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
           <div class="card-body p-4 p-md-5">
             <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
-            <form>
+            <form method="post" action="" novalidate>
 
               <div class="row">
                 <div class="col-md-6 mb-4">
 
                   <div class="form-outline">
-                    <input type="text" id="madg" class="form-control form-control-lg" />
+                    <input type="text" id="madg" name="madg"  class="form-control form-control-lg" />
                     <label class="form-label" for="madg">Mã độc giả</label>
                   </div>
 
@@ -24,7 +24,7 @@
                 <div class="col-md-6 mb-4">
 
                   <div class="form-outline">
-                    <input type="text" id="hovaten" class="form-control form-control-lg" />
+                    <input type="text" id="hovaten" name="hovaten" class="form-control form-control-lg" />
                     <label class="form-label" for="hovaten">họ và tên</label>
                   </div>
 
@@ -35,7 +35,7 @@
                 <div class="col-md-6 mb-4 d-flex align-items-center">
 
                   <div class="form-outline datepicker w-100">
-                  <input type="date" class="form-control form-control-lg" id="namsinh" >
+                  <input type="date" class="form-control form-control-lg" id="namsinh" name="namsinh" >
                     <label for="birthdayDate" class="form-label">Năm sinh</label>
                   </div>
 
@@ -48,7 +48,7 @@
                     <input
                       class="form-check-input"
                       type="radio"
-                      name="inlineRadioOptions"
+                      name="gioitinh"
                       id="femaleGender"
                       value="option1"
                       checked
@@ -60,7 +60,7 @@
                     <input
                       class="form-check-input"
                       type="radio"
-                      name="inlineRadioOptions"
+                      name="gioitinh"
                       id="maleGender"
                       value="option2"
                     />
@@ -76,7 +76,7 @@
                 <div class="col-md-6 mb-4 pb-2">
 
                   <div class="form-outline">
-                    <input type="text" id="emailAddress" class="form-control form-control-lg" />
+                    <input type="text" id="emailAddress" name="diachi" class="form-control form-control-lg" />
                     <label class="form-label" for="emailAddress">địa Chỉ</label>
                   </div>
 
@@ -84,7 +84,7 @@
                 <div class="col-md-6 mb-4 pb-2">
 
                   <div class="form-outline">
-                    <input type="text" id="phoneNumber" class="form-control form-control-lg" />
+                    <input type="text" id="phoneNumber" name="nghenghiep" class="form-control form-control-lg" />
                     <label class="form-label" for="phoneNumber">Nghề nghiệp</label>
                   </div>
 
@@ -95,7 +95,7 @@
               <div class="col-md-6 mb-4 d-flex align-items-center">
 
                 <div class="form-outline datepicker w-100">
-                <input type="date" class="form-control form-control-lg" id="datetime" >
+                <input type="date" name="ngaycapthe" class="form-control form-control-lg" id="datetime" >
                 <label for="birthdayDate" class="form-label">Ngày cấp thẻ</label>
                 </div>
 
@@ -104,7 +104,7 @@
                 <div class="col-md-6 mb-4 d-flex align-items-center">
 
                   <div class="form-outline datepicker w-100">
-                  <input type="date" class="form-control form-control-lg" id="datetime" >
+                  <input type="date" name="ngayhethan" class="form-control form-control-lg" id="datetime" >
                     <label for="birthdayDate" class="form-label">Ngày hết hạn</label>
                   </div>
 
@@ -113,7 +113,7 @@
 
 
               <div class="mt-4 pt-2">
-                <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                <input class="btn btn-primary btn-lg" name="submit" type="submit" value="Submit" />
               </div>
 
             </form>
