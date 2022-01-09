@@ -36,9 +36,9 @@
             $this->CloseConnect($conn);
             return $arr_Reader;
         }
-        public function DeleteReader($madg=null){
+        public function DeleteReader($ma=null){
             $conn=$this->ConnectionDB();
-            $sql="delete nhanvien where maNV='$manv'";
+            $sql="DELETE docgia where madg= {$ma} ";
             $isTrue=mysqli_query($conn,$sql);
             $this->CloseConnect($conn);
             return $isTrue;

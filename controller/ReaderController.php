@@ -19,10 +19,14 @@
             //sau đó đổ dữ liệu ra user view
         }
         function add(){
+            require_once "view/reader/add.php";
+        }
+        function edit(){
               //cần gọi đêns usermodel để truy vấn csdl
 
             //sau đó đổ dữ liệu ra user view
         }
+
         // function edit(){
         //      echo "hiển thị danh sách người dùng";
         //       //cần gọi đêns usermodel để truy vấn csdl
@@ -83,9 +87,10 @@
 
         // }
         function delete(){
-            $id=$_GET(['iddg']);
+            $id= $_GET(['iddg']);
+            
             if (!is_numeric($id)) {
-                header("Location: index.php?controller=reader&action=index");
+                header("Location: index.php?controller=reader&action=chitiet");
                 exit();
             }
             $readerModel= new ReaderModel();
@@ -97,7 +102,7 @@
             else{
                 $error="Xóa Thất bại!";
             }
-            header("Location: index.php?controller=blooddonor&action=index&error=$error");
+            header("Location: index.php?controller=reader&action=delete&error=$error");
               
         }
     }

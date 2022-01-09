@@ -8,6 +8,7 @@
     <title>Blood</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
                         <a class="nav-link active" aria-current="page" href="//localhost/BKTGK_1951060773/index.php/?controller=reader&action=index">Hiển thị danh sách</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="//localhost/BKTGK_1951060773/index.php/?controller=reader&action=edit">Hiển Thị Chi Tiết </a>
+                        <a class="nav-link" href="//localhost/BKTGK_1951060773/index.php/?controller=reader&action=chitiet">Hiển Thị Chi Tiết </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="//localhost/BKTGK_1951060773/index.php/?controller=reader&action=add">Thêm thông tin</a>

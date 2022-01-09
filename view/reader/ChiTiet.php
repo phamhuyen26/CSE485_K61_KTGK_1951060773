@@ -10,7 +10,7 @@
         <p class="fs-3">Danh sách độc giả</p>
         <p class="">
                 <?php
-                    echo $_GET['error'];
+                    // echo $_GET['error'];
                 ?>
         </p>
     <table class="table table-bordered">
@@ -33,8 +33,8 @@
       <tbody>
         <?php
            foreach($reader_arr as $reader){
-            $Edit = "index.php?controller=reader&action=edit&iddg=" . $bd['madg'];
-            $Delete ="index.php?controller=reader&action=delete&iddg=" . $bd['madg'];
+            $Edit = "//localhost/BKTGK_1951060773/index.php/?controller=reader&action=edit&iddg=" . $reader['madg'];
+            $Delete ="//localhost/BKTGK_1951060773/index.php/?controller=reader&action=delete&iddg=" . $reader['madg'];
         ?>
         <tr>
           <td scope="row"><?php echo $reader['madg'] ?></td>
@@ -45,8 +45,7 @@
           <td><?php echo $reader['ngaycapthe'] ?></td>
           <td><?php echo $reader['ngayhethan'] ?></td>
           <td><?php echo $reader['diachi'] ?></td>
-          <td><?php echo $reader['diachi'] ?></td>
-          <td><?php echo $reader['diachi'] ?></td>
+          
           <td><a href="<?php echo $Edit ?>"><i class="bi bi-pencil-square"></i></a></td>
           <td><a href="<?php echo $Delete ?>"><i class="bi bi-trash"></i></a></td>
                             
