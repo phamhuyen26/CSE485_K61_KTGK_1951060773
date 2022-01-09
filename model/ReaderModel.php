@@ -43,6 +43,24 @@
             $this->CloseConnect($conn);
             return $isTrue;
         }
+        public function update($ma = []) {
+            $connection = $this->ConnectionDB();
+            $update = "UPDATE docgia 
+            SET madg = '{$readerArr['hovaten']}', gioitinh = '{$readerArr['hovaten']}', namsinh = '{$readerArr['namsinh']}', nghenghiep = '{$readerArr['nghenghiep']}', ngaycapthe = '{$readerArr['ngaycapthe']}', ngayhethan = '{$readerArr['ngayhethan']}',diachi = '{$readerArr['diachi']}'  WHERE bd_id = {$bd['bd_id']}";
+            $isUpdate = mysqli_query($connection, $queryUpdate);
+            $this->CloseConnect($connection);
+    
+            return $isUpdate;
+        }
+        public function insert($arr = []) {
+            $connection = $this->ConnectionDB();
+            $Insert = "INSERT INTO docgia (madg, hovaten, gioitinh, namsinh, nghenghiep, ngaycapthe, ngayhethan, diachi)
+            VALUES ('{$arr['madg']}', '{$arr['hovaten']}', '{$arr['gioitinh']}', '{$arr['namsinh']}', '{$arr['nghenghiep']}', '{$arr['ngaycapthe']}','{$arr['ngayhethan']}','{$arr['diachi']}')";
+            $isInsert = mysqli_query($connection, $Insert);
+            $this->CloseConnect($connection);
+    
+            return $isInsert;
+        }
 
     }
 
